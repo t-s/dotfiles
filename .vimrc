@@ -123,3 +123,7 @@ augroup END
 
 set statusline=%<%f\ %h%m%r%{kite#statusline()}%=%-14.(%l,%c%V%)\ %P
 set laststatus=2  " always display the status line
+
+" with local connections, uses xterm style mouse, preventing line numbers from being selected
+" when using ssh, need to enable X11 forwarding
+set mouse=a
