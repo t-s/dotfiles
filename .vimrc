@@ -127,3 +127,5 @@ set laststatus=2  " always display the status line
 " with local connections, uses xterm style mouse, preventing line numbers from being selected
 " when using ssh, need to enable X11 forwarding
 set mouse=a
+
+" TODO: need to map caps lock to escape here instead of in OS
