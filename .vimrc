@@ -1,7 +1,5 @@
-" Use the Solarized Dark theme
 set background=dark
 colorscheme Monokai
-" colorscheme atomified
 let g:solarized_termtrans=1
 
 " Make Vim more useful
@@ -121,11 +119,23 @@ augroup resCur
   autocmd BufWinEnter * call ResCur()
 augroup END
 
-set statusline=%<%f\ %h%m%r%{kite#statusline()}%=%-14.(%l,%c%V%)\ %P
+set statusline+=%#LineNr#
+set statusline+=%#CursorColumn#
+
 set laststatus=2  " always display the status line
 
 " with local connections, uses xterm style mouse, preventing line numbers from being selected
 " when using ssh, need to enable X11 forwarding
+
 set mouse=a
 
-" TODO: need to map caps lock to escape here instead of in OS
+set ts=4
+
+set nocompatible
+
+map OA <up>
+map OB <down>
+map OC <right>
+map OD <left>
+
+" set term=cons25
